@@ -51,10 +51,11 @@ header {
     text-align: center;
     margin-top: 5px;
   } 
-  /* Choose move */
+  /* Pick your move */
 .move {
     font-size: 25px;
     font-weight: bold;
     margin: 10px;
+    letter-spacing: 1px;
   }
   
