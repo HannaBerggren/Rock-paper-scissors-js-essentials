@@ -28,3 +28,13 @@ header {
   header > h2 {
     margin-bottom: 20px;
   }
+  /* Game area */
+.game-area {
+    height: 85vh;
+    width: 99vw;
+    color: #f4f7f8;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+  }
