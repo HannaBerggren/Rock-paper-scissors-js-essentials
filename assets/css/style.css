@@ -38,3 +38,11 @@ header {
     justify-content: center;
     display: flex;
   }
+  /* Scores */
+.score {
+    top: 155px;
+    width: 90vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+  }
