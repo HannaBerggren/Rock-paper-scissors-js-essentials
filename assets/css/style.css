@@ -5,3 +5,13 @@
     margin: 0;
     box-sizing: border-box;
   }
+  /* Body structure */
+body {
+    height: 90%;
+    text-align: center;
+    font-family: el messiri, Arial;
+    background: linear-gradient(
+    blue,
+    red
+    );
+  }
