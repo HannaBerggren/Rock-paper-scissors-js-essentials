@@ -46,3 +46,8 @@ header {
     display: flex;
     justify-content: space-evenly;
   }
+  .player-count, .computer-count {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+  } 
