@@ -58,4 +58,33 @@ header {
     margin: 10px;
     letter-spacing: 1px;
   }
+  /* Buttons */
+.options {
+    width: 28px;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    display: flex;
+  }
+  
+  .rock, .paper, .scissors {
+    color: #f4f7f8;
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  img {
+    width: 65px;
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 5;
+    transform: scale(1.3);
+  }
   
