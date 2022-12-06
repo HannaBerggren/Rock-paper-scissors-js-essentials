@@ -58,6 +58,11 @@ header {
     margin: 10px;
     letter-spacing: 1px;
   }
+  .movesLeft {
+    font-size: 25px;
+    letter-spacing: 0,5px;
+}
+
   /* Buttons */
 .options {
     width: 28px;
@@ -98,5 +103,11 @@ header {
     padding: 10px;
     border: none;
     border-radius: 30%;
+  }
+  /* Result */
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
   }
   
