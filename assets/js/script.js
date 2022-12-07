@@ -54,7 +54,7 @@ playerOptions.forEach(option => {
         result.textContent = 'Tie';
         } else if (player == 'rock') {
           if (computer == 'paper'){
-            result.textContent = 'Computer Won';
+            result.textContent = 'Computer Won!';
             computerScore++;
             computerScoreBoard.textContent = computerScore;
           } else {
@@ -102,16 +102,16 @@ playerOptions.forEach(option => {
 
       if (playerScore > computerScore) {
         result.style.fontSize = '3rem';
-        result.innerText = 'Congratulations! You won!';
-        result.style.color = '#5D9138';
+        result.innerText = 'Yeey! You won!';
+        result.style.color = '#f4f7f8';
       } else if (playerScore < computerScore) {
         result.style.fontSize = '3rem';
         result.innerText = 'You lost the game!';
-        result.style.color = '#B13636';
+        result.style.color = '#f4f7f8';
       } else {
         result.style.fontSize = '3rem';
         result.innerText = 'Tie';
-        result.style.color = '#6B787C';
+        result.style.color = '#f4f7f8';
       }
         reloadButton.innerText = 'Restart';
         reloadButton.style.display = 'flex';
