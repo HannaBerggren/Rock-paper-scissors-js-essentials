@@ -45,8 +45,8 @@ playerOptions.forEach(option => {
 
     const winner = (player, computer) => {
     const result = document.querySelector('.result');
-    const playerScoreBoard = document.querySelector('.p-count');
-    const computerScoreBoard = document.querySelector('.c-count');
+    const playerScoreBoard = document.querySelector('.player-count');
+    const computerScoreBoard = document.querySelector('.computer-count');
       player = player.toLowerCase();
       computer = computer.toLowerCase();
       
@@ -91,7 +91,7 @@ playerOptions.forEach(option => {
 
     const chooseMove = document.querySelector('.move');
     const result = document.querySelector('.result');
-    const reloadButton = document.querySelector('.reload');
+    const reloadButton = document.querySelector('.restart');
      
       playerOptions.forEach(option => {
       option.style.display = 'none';
