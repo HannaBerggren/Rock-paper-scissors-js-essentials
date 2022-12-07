@@ -40,7 +40,7 @@ playerOptions.forEach(option => {
 });
 };  
 /**
- * Function to decide the winner
+ * Function to decide who the winner is
  */
 
     const winner = (player, computer) => {
@@ -120,12 +120,16 @@ playerOptions.forEach(option => {
       });
   };
 
-    // Calling playGame function
+    /**
+     * Calling playGame function 
+     */ 
         playGame();
 
     };
 
-    // Calling game function
+    /**
+     * Calling game function
+     */ 
         game();
   
 
