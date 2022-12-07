@@ -9,11 +9,12 @@ const game = () => {
 /**
  * Function to play the game
  */
+const playGame = () => {
 const rockButton = document.querySelector('.rock');
-const paperButton = document.querySelector('paper');
-const scissorsButton = document.querySelector('scissors');
-const playerOptions = [rockButton, paperButton, scissorsButton];
-const computerOptions = ['rock', 'paper', 'scissors'];
+const paperButton = document.querySelector('.paper');
+const scissorButton = document.querySelector('.scissor');
+const playerOptions = [rockButton, paperButton, scissorButton];
+const computerOptions = ['rock', 'paper', 'scissor'];
 
 /**
  * Function to start play
@@ -30,7 +31,7 @@ playerOptions.forEach(option => {
  /**
  * Function to see who wins and to end game after 10 moves
  */
-        winner(this.innerText, computerChoice);
+        winner(this.innerText, computerChoise);
 
         if(moves === 10) {
             gameOver(playerOptions, movesLeft);
@@ -41,7 +42,8 @@ playerOptions.forEach(option => {
 /**
  * Function to decide the winner
  */
-const winner = (player, computer) => {
+
+    const winner = (player, computer) => {
     const result = document.querySelector('.result');
     const playerScoreBoard = document.querySelector('.p-count');
     const computerScoreBoard = document.querySelector('.c-count');
@@ -60,7 +62,7 @@ const winner = (player, computer) => {
               playerScore++;
               playerScoreBoard.textContent = playerScore;
           }
-      } else if (player == 'scissors') {
+      } else if (player == 'scissor') {
           if (computer == 'rock'){
               result.textContent = 'Computer Win!';
               computerScore++;
@@ -71,7 +73,7 @@ const winner = (player, computer) => {
               playerScoreBoard.textContent = playerScore;
           }
       } else if (player == 'paper'){
-          if (computer == 'scissors'){
+          if (computer == 'scissor'){
               result.textContent = 'Computer Win!';
               computerScore++;
               computerScoreBoard.textContent = computerScore;
@@ -82,17 +84,17 @@ const winner = (player, computer) => {
           }
       }
   };
-  /**
+/**
  * Function to run when game is over
  */
-  const gameOver = (playerOptions, movesLeft) => {
+    const gameOver = (playerOptions, movesLeft) => {
 
     const chooseMove = document.querySelector('.move');
     const result = document.querySelector('.result');
     const reloadButton = document.querySelector('.reload');
      
       playerOptions.forEach(option => {
-        option.style.display = 'none';
+      option.style.display = 'none';
       });
 
       chooseMove.innerText = 'Game over!';
@@ -114,6 +116,18 @@ const winner = (player, computer) => {
         reloadButton.innerText = 'Restart';
         reloadButton.style.display = 'flex';
         reloadButton.addEventListener('click', () => {
-          window.location.reload();
+        window.location.reload();
       });
   };
+
+    // Calling playGame function
+        playGame();
+
+    };
+
+    // Calling game function
+        game();
+  
+
+
+
