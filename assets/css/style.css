@@ -28,6 +28,14 @@ header {
   header > h2 {
     margin-bottom: 20px;
   }
+  /* Media queries for screens smaller than 415px */
+
+  @media only screen and (max-width: 415px) {
+    #title, #letsplay {
+      font-size: 150%;
+    }
+  }
+  
   /* Game area */
 .game-area {
     height: 85vh;
@@ -50,10 +58,14 @@ header {
     font-size: 25px;
     text-align: center;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
   } 
 
   .playerScore, .computerScore {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
   }
   /* Pick your move */
 .move {

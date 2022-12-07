@@ -1,108 +1,187 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors
 
-Welcome HannaBerggren,
+Play the classic game rock scissors and bag. A game that most people know all over the world. You play together with the computer to get the highest score after 10 moves
+<p>&nbsp;</p>
+<img src= "assets/images/amiresponse.png">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+# Table of Contents
+1. [Ux](#id-ux)
+2. [Features](#id-features)
+    * [Header and Title](#id-header)
+    * [Instructions](#id-instructions)
+    * [Scores](#id-scores)
+    * [Game area](#id-game-area)
+    * [Game](#id-game)
+    * [Result](#id-result)
+    * [Win box](#id-win)
+    * [Lose box](#id-lose)
+    * [Restart button](#id-restart)
+3. [Testing](#id-testing) 
+4. [Validator Testing](#id-validator)
+5. [Bugs](#id-bugs)
+6. [Unfixed Bugs](#id-bugs)
+7. [Technologies used](#id-tech)
+8. [Deployment](#id-deploy)
+9. [Credits](#id-credits)
+10. [Acknowledgements](#id-acknowledgements)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
 
-## Gitpod Reminders
+# Ux<div id='id-ux'>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Stories
 
-`python3 -m http.server`
+* As a User
 
-A blue button should appear to click: _Make Public_,
+  * As a user, I want a website that is easy to understand.
+  * As a user, I want to see an interactive game that will that will show who wins each move.
+  * As a user, I want to see a game that will be playable on all devices and performace and experience will not change.
+  * As a user, I want to see how many moves that are left each move, to increase the excitement as the score counts down.
+  * As a user, I want to see who wins each round.
+  * As a user, I want to easily see how I can play the game again.<p>&nbsp;</p>  
 
-Another blue button should appear to click: _Open Browser_.
+* As a returning user 
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  * As a returning user, I want the website to be continually updated with new features to keep me coming back and playing the game.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+# Features<div id='id-features'>
+* ## The Header and Title<div id='id-header'>
+When the user opens the webpage, the website color is the first thing that will catch their attention. It's colorful and feels like a fun game! The headline that says "let's play" hopefully makes the player feel welcome and can't wait to face the computer in an exciting match.<p>&nbsp;</p>   
+<img src= "assets/images/rps1.png"> 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* ## Scores<div id='id-scores'>
+This area is where the computer and users scores are displayed. to win the game it's about getting the highest score after 10 moves.
+<p>&nbsp;</p>
+<img src = "assets/images/scores.png">
 
-To log into the Heroku toolbelt CLI:
+* ## Game area<div id='game-area'>
+The game area is the area where you see the entire game. There is a text to show where you pick your move to easily see how you start playing. It also shows how many moves that are left before the round ends. After each choise you make, a text is shown how each move went and after 10 rounds you see who wins the game. When the game is finished, it shows who won and to easily play the game again, a restart button is shown<p>&nbsp;</p>
+<img src="assets/images/open-msg.png">
+<img src="assets/images/play-btn.png">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* ## Game<div id='id-game'> 
+The game is where the player challenges the computer. There are three choices for both to make, rock, paper or scissors. The player starts to choose, then it's the computer's turn, which is completely random. Below the buttons it's shown who is beating the other in each round while the score increases for each participant after each move.<p>&nbsp;</p>
+<img src="assets/images/game.png"> 
 
-------
+* ## Result<div id='id-result'>
+Each time the user and computer make a choice, a message will appear below the game. The message will let the user know who wins each move. When ten rounds have passed, when ten rounds have passed the player is told if they have won or lost the game.<p>&nbsp;</p>
+<img src ="assets/images/result.png"> 
 
-## Release History
+* ## Winning Text<div id='id-win'>
+The user who defeats the computer is notified by a text that they have won the game. This is when the game is over after ten rounds and the user can restart the game again. This is good for the user, as they are informed that the game is over and will not continue.<p>&nbsp;</p>
+<img src ="assets/images/win-msg.png">
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* ## Losing Text<div id='id-lose'>
+When the computer wins the users are notified with a text that they have lost the game. This is when the game is over after ten rounds and the user can restart the game again. This is good for the user, as they are informed that they have lost and the game will not continue.<p>&nbsp;</p>
+<img src ="assets/images/lose-msg.png">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* ## Restart button<div id='id-restart'>
+When the game is over, a button appears where the player can choose to restart the game. The game is restarted when the button is clicked and the score and remaining moves are reset.<p>&nbsp;</p>
+ <img src ="assets/images/restart-btn.png">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+* ### Features Left to Implement
+ * I would like to add the player's as well as the computer's choice of rock, paper or scissors, not just who wins.
+ * Presently, the user is notified by text of the website's computer selection. I would like to implement a feature that highlights the computers' choice with a colored background, while also communicating the result with the text below.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Testing<div id='id-testing'>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+* Search Engines
+  * I tested my website on Google Chrome, Safari and Mozilla Firefox. The website appeared as I had intended it to  and performed well on those search engines. I did not encounter bugs or experience any issues.
+* Amiresponsive
+  * To test my website on all iphone devices I used [am i responsiveness](http://ami.responsivedesign.is/). I added a screenshot of how these look on the top of the Read.me.
+  
+  
+### Tests were performed on the following devices to ensure their responsiveness and to ensure that all the features worked correctly and that there were no unresolved bugs.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Mobile Phones/Tablet
+   * Samsung Galaxy A50
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+   * Iphone 12
+   
+   * Apple Ipad.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Desktop/Laptop
+   * Apple Macbook
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+   * Apple Imac
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+   * ASUS Chromebook Flip C434
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+# Validator Testing<div id='id-validator'>
 
-## FAQ about the uptime script
+  * Lighthouse
+    *  I tested he website on the Lighthouse testing in the chrome dev tools and the results are shown below.  
 
-**Why have you added this script?**
+    <img src = "assets/images/lh.png">
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+  * Html
+    *  There were no errors found when I tested the webpage on the HTML validator.   
+        <img src = "assets/images/htmlvalidator.png">
+  
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+  * CSS
+    *  There were no errors found when I tested the webpage on the CSS validator.  
+            <img src = "assets/images/cssval.png">
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  * javaScript
+    *  There were no errors found when I tested the webpage on jshint.   
+            <img src = "assets/images/jshint1.png">
 
-**So….?**
+# Bugs<div id='id-bugs'>
+   * There was only one problem I encountered while developing this website, and it was not an issue with the website itself. When I first tried to use jshint, I was getting a lot of errors which read "'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)." I had no idea what they were about. I Googled it and was unable to find an answer.
+   * As a result, I went to Slack see if anyone else had this same issue. Someone was able to help. They explained that I would need to add /*jshint esversion: 6 */ at the top of the page, and then all these errors would be solved.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Unfixed Bugs<div id='id-unfixed'>
+   * There was an issue with the restart button when testing the website on an Iphone pro 12. The text in the button spilled over to the bottom border of the button. I tried adding padding to the button which improved the aesthetic of the button on most devices, but did not resolve the problem on the Iphone 12.  
 
-**Can I opt out?**
+# Technologies Used<div id='id-tech'>
+ * HTML5
+ * CSS3 
+ * javaScript
+ * Gitpod 
+ * GitHub 
+ * Google Fonts
+ * shutterstock
+ * Chrome dev tools
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+# Deployment<div id='id-deploy'>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+* Create the repository for the website you wish to publish.
+* The next step is to push code.
+* Then go to the settings.
+* Scroll down to Github pages and click on the link.
+* Then at the source there is a drop down icon click on this and select main branch.
+* The page will refresh with a link to the website. Once the link is selected then website is deployed.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The live link to this website can be found here - https://squirkey89.github.io/Rock-Paper-Scissor-portfolio-project/
+ 
 
----
+# Credits<div id='id-credits'>
+  * I used [am i responsiveness](http://ami.responsivedesign.is/) web site for checking responsiveness on all Apple devices screen sizes.
+  * When coding the project I referenced the [love maths project](hhttps://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode) The code referenced ```let userScoreDisplayed = parseInt(document.getElementById("user-score").innerText); document.getElementById("user-score").innerText = ++userScoreDisplayed;```.
+  * Code was referenced from Dani Krossing's [YouTube channel](https://www.youtube.com/watch?v=kEf1xSwX5D8) when creating this website's Favicon.
+  Here is the code:```link rel="shortcut icon" href="assets/images/android-chrome-192x192.png"```.
+  * I also referenced code from whatsdev [YouTube channel](https://www.youtube.com/watch?v=Qqy8Ov3NWvQ) The code referenced is ```function generateComputerChoice() {
+	let choices = ['rock', 'paper', 'scissors'];
+	let randomNumber = Math.floor(Math.random() * choices.length);
+	return choices[randomNumber];```.
 
-Happy coding!
+
+**Media**
+  * All the images used in the website were taken from [shutterstock](.https://www.shutterstock.com/).
+  * The icon used for the websites favicon was created and downloaded from [Favicon Generator](https://favicon.io/).
+  * The emojis that I used in the game were taken from [getemoji](https://getemoji.com/).
+
+# Acknowledgments<div id='id-acknowledgements'>
+   * My mentor for the useful feedback direction and guidance.
+   * The online tutors and the slack community for help and and advice.
+   * Code Institite course material.
