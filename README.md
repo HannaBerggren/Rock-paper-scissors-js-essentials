@@ -165,7 +165,7 @@ The live link to this website can be found here - (https://hannaberggren.github.
  
 
 # Credits<div id='id-credits'>
-  * I used [am i responsiveness](https://ui.dev/amiresponsive?url=https://hannaberggren.github.io/Rock-paper-scissors-js-essentials/) web site for checking responsiveness on all Apple devices screen sizes.
+  * I used [am i responsiveness](https://ui.dev/amiresponsive?url=https://hannaberggren.github.io/Rock-paper-scissors-js-essentials/) web site for checking responsiveness on all Apple, Samsung and SonyXperia devices screen sizes.
   * When coding the project I referenced the [rock paper scissors](https://github.com/arneladedovic/rock-paper-scissors) The code referenced ```const game = () => { let playerScore = 0; let computerScore = 0; let moves = 0;```.
   * I also referenced ```const playGame = () => { const rockButton = document.querySelector('.rock'); const paperButton = document.querySelector('.paper'); const scissorButton = document.querySelector('.scissor'); const playerOptions = [rockButton, paperButton, scissorButton]; const computerOptions = ['rock', 'paper', 'scissor'];```
 
