@@ -28,14 +28,7 @@ header {
   header > h2 {
     margin-bottom: 20px;
   }
-  /* Media queries for screens smaller than 415px */
 
-  @media only screen and (max-width: 415px) {
-    #title, #letsplay {
-      font-size: 150%;
-    }
-  }
-  
   /* Game area */
 .game-area {
     height: 85vh;
@@ -132,3 +125,15 @@ header {
     margin-top: 20px;
     font-size: 1.2rem;
   }
+
+ /* Media queries for screens smaller than 415px */
+
+ @media only screen and (max-width: 415px) {
+  #title, #letsplay {
+    font-size: 150%;
+  }
+}
+
+
+
+  
